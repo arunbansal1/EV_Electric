@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title logo -->
+    <link rel="icon" type="image/png" href="KTCLOGO.png">
+    <!-- favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" media="all">
+    <!-- Fonts Awesome CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <!-- Elmentkit Icon CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/elementskit-icon-pack/assets/css/ekiticons.css">
+    <!-- progress bar CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/progressbar-fill-visible/css/progressBar.css">
+    <!-- jquery-ui css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/jquery-ui/jquery-ui.min.css">
+    <!-- modal video css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/modal-video/modal-video.min.css">
+    <!-- light box css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fancybox/dist/jquery.fancybox.min.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendors/slick/slick-theme.css">
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="style.css?v=11">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Ev Electric</title>
+    <style>
+        .fs-5 {
+            font-size: 15px !important;
+            color: #000;
+            font-weight: 450;
+        }
+
+        .pos-bottom {
+            position: relative;
+            bottom: 10px;
+        }
+
+        .tawk-button {
+            background-color: #83d658 !important;
+        }
+    </style>
+</head>
+
+<body onload="myFunction()">
+
+    <div id="loader">
+        <span class="loader"></span>
+    </div>
+    <!--<div id="siteLoader" class="site-loader ">-->
+    <!--    <div class="preloader-content">-->
+    <!--        <img src="assets/img/loader1.gif" alt="">-->
+    <!--    </div>-->
+    <!--</div>-->
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button> -->
+    <!-- modal start -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color:#88a203">
+                <div class="modal-body">
+                    <button type="button" id='close-modal' onclick="closeModal()" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="assets/img/modal_img.png" width="100%" alt="modal_img" style="border-radius:5px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+    <div id="page" class="full-page">
+        <header class="site-header site-header-transparent">
+            <!-- header html start -->
+            <!--<div class="upper-header">-->
+            <!--    <div class="container">-->
+            <!--        <div class="row align-items-center ">-->
+            <!--            <div class="col-lg-6 d-flex align-items-center header-banner-info justify-content-lg-start justify-content-around">-->
+            <!--                <p>Start your sustainable journey today</p>-->
+            <!--                <span class="start-btn">-->
+            <!--                    <a href="ps/register">GET STARTED</a>-->
+            <!--                </span>-->
+            <!--            </div>-->
+            <!--            <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center header-location">-->
+            <!--                <i class="fas fa-map-marker-alt"></i> 2nd Floor, 236 Office no, TTT Patiala Road Near Radisson Hotel, Zirakpur (PB) 140603, PUNJAB 140603-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</div>-->
+            <div class="top-header">
+                <div class="container">
+                    <div class="row align-items-center justify-content-lg-start">
+                        <!-- <div class="site-identity col-lg-3 col-sm-12 col-6">
+                            <p class="site-title">
+                                <a href="#">
+                                    <img src="ktc_logo.png" alt="header-logo">
+                                </a>
+                            </p>
+                        </div> -->
+                        <div
+                            class="col-lg-7 col-sm-6 col-6 d-flex justify-content-lg-start justify-content-sm-around justify-content-end">
+                            <div class="header-contact-info">
+                                <ul>
+                                    <li>
+                                        <a href="tel:+919906246006">
+                                            <span class="icon">
+                                                <!-- <i aria-hidden="true" class="icon icon-phone"></i> -->
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="details-content">
+                                                <span class="content-title">Call us now :</span>
+                                                <span>+91-9906246006</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:SKulvinder625@gmail.com">
+                                            <span class="icon">
+                                                <!-- <i aria-hidden="true" class="icon icon-envelope3"></i> -->
+                                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="details-content">
+                                                <span class="content-title">Email us now :</span>
+                                                <span class="__cf_email__"
+                                                    data-cfemail="c0a9aea6af80a4afada1a9aeeea3afad">SKulvinder625@gmail.com</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="header-social social-links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=61554808901859"
+                                            target="_blank">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/Frelectricltd" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/frelectric01/" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/fr-electric-41171b2aa/" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                        <div
+                            class="col-lg-5 col-sm-6 col-6 d-flex justify-content-end justify-content-sm-between justify-content-end pe-0">
+                            <div class="header-social social-links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=61554808901859"
+                                            target="_blank">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/Frelectricltd" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/frelectric01/" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/fr-electric-41171b2aa/" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="free-consultant">
+                                FREE CONSULTATION
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-header" id="masthead">
+                <div class="container px-0">
+                    <div class="hb-group d-flex align-items-center justify-content-between">
+                        <div class="main-navigation col-lg-9 justify-content-between d-flex align-items-center">
+                            <!-- <img src="runing_scoter.png" id='running_scoter' alt="running_scoter"> -->
+                            <div class="logo-bottom-header">
+                                <a href="index">
+                                    <!-- <span> -->
+                                    <img src="logo_ktc.png" style='height: 60px' alt="logo.pgo">
+                                    <!-- </span> -->
+                                    <!-- <div><span>Green </span><br><span id="drive-text-logo">Drive</span></div> -->
+                                </a>
+                            </div>
+                            <nav id="navigation" class="navigation d-none ms-auto d-lg-inline-block">
+                                <ul>
+                                    <li class="current-menu-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about">About</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="franchise/login">Franchise</a>
+                                    </li> -->
+                                    <li>
+                                        <a href="#innovation">Innovation</a>
+                                    </li>
+
+                                    <!-- <li>
+                                        <a href="assets/pdf/product-catalog.pdf">Product Catalog</a>
+                                    </li> -->
+                                    <li>
+                                        <a href="#contact">Contact</a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3 col-12 d-flex justify-content-lg-end justify-content-center">
+
+                            <div class="header-btn d-inline-block">
+                                <a href="ps/login" class="button-round-gradient">LOGIN</a>
+                                <a href="ps/register" class="button-round-gradient">SIGN UP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-container"></div>
+            </div>
+        </header>
+        <main id="content" class="site-main">
+            <!-- home banner section html start -->
+            <!--<section class="home-banner">-->
+            <!--    <div class="overlay"></div>-->
+            <!--    <div class="container">-->
+            <!--        <div class="row">-->
+            <!--            <div class="col-md-8 offset-md-2">-->
+            <!--                <div class="banner-content">-->
+            <!--                    <h2 class="banner-title">-->
+            <!--                        Driving Innovation, Powering Sustainability-->
+            <!--                        <span class="title-highlight">EV Electric</span>-->
+            <!--                    </h2>-->
+            <!--                    <div class="title-divider-center">GO GREEN GO ELECTRIC</div>-->
+            <!--                    <p class="banner-text">-->
+            <!--                        Our vehicles are powered by clean energy sources, reducing carbon emissions and minimizing our environmental impact.With a firm commitment to sustainability, we design and manufacture electric vehicles that contribute to a greener future.-->
+            <!--                    </p>-->
+            <!--                    <div class="banner-button">-->
+            <!--                        <a href="ps/register" class="button-round-gradient">JOIN US</a>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</section>-->
+
+            <section id='carousel'>
+                <div class="container-fluid" style='margin: 0 !important; padding: 0 !important'>
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="carousel-overlay"></div>
+                                <img class="d-block w-100" src="assets/img/banners/6.webp" alt="First banner">
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-overlay"></div>
+                                <img class="d-block w-100" src="assets/img/banners/7.jpg" alt="Second banner">
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-overlay"></div>
+                                <img class="d-block w-100" src="assets/img/banners/8.jpg" alt="Third banner">
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-overlay"></div>
+                                <img class="d-block w-100" src="assets/img/banners/9.webp" alt="Fourth banner">
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-overlay"></div>
+                                <img class="d-block w-100" src="assets/img/banners/10.png" alt="Fifth banner">
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section mt-5" id='about' data-aos="fade-down">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-left-image">
+                                <figure class="top-left-img" data-aos="zoom-in  ">
+                                    <img src="assets/img/gallery/square-5.png" alt="">
+                                </figure>
+                                <div class="bottom-content">
+                                    <div class="img-year-content" data-aos="flip-left">
+                                        <h2>18+</h2>
+                                        <h6>YEARS</h6>
+                                    </div>
+                                    <figure class="bottom-right-img" data-aos="fade-up">
+                                        <img src="assets/img/gallery/square-1.png" alt="">
+                                        <div class="video-button">
+                                            <a id="video-container" data-video-id="gUyEbqcCJgE">
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" data-aos="fade-down">
+                            <div class="about-right-desc">
+                                <div class="section-head">
+                                    <div class="title-divider-right">ABOUT US</div>
+                                    <h3 class="section-title">
+                                        Committed to Sustainable
+                                        <span class="title-highlight-gradient">
+                                            Solutions
+                                        </span>
+                                    </h3>
+                                    <p>
+                                        <b>EV Electric</b> is a leading player in the electric vehicle industry,
+                                        dedicated to providing eco-friendly transportation solutions. With a firm
+                                        commitment to sustainability, we design and manufacture electric
+                                        vehicles that contribute to a greener future. Our vehicles are powered by clean
+                                        energy sources, reducing carbon emissions and minimizing our environmental
+                                        impact. At <b>EV Electric</b>, we believe in the power of
+                                        innovation and strive to create cutting-edge electric vehicles that combine
+                                        performance, style, and environmental consciousness.
+                                    </p>
+                                </div>
+                                <div class="type-of-trait">
+                                    <div class="trait-type">
+                                        <div class="trait-icon">
+                                            <!-- <i aria-hidden="true" class="icon icon-battery"></i> -->
+                                            <i class="fa fa-battery-full" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="trait-detail">
+                                            <h5 class="trait-title">Advanced Battery Technology</h5>
+                                            <p class="trait-describe"><b>EV Electric</b> vehicles boast cutting-edge
+                                                batteries for extended range and rapid charging, powering journeys with
+                                                minimal downtime</p>
+                                        </div>
+                                    </div>
+                                    <div class="trait-type">
+                                        <div class="trait-icon">
+                                            <!-- <i aria-hidden="true" class="icon icon-energy-saving"></i> -->
+                                            <i class="fa fa-bolt" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="trait-detail">
+                                            <h5 class="trait-title">Intelligent Energy Management System</h5>
+                                            <p class="trait-describe">
+                                                Equipped with advanced systems, EV Electric vehicles optimize power for
+                                                efficiency, enhancing performance while minimizing environmental impact
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--<section class="about-section mt-5" id='carousel'>-->
+            <!--    <div class="container-fluid" style='margin: 0 !important; padding: 0 !important'>-->
+            <!--        <div id="carouselExample" class="carousel slide">-->
+            <!--          <div class="carousel-inner">-->
+
+            <!--            <div class="carousel-item active">-->
+            <!--              <img class="d-block w-100" src="assets/img/feature-1.jpeg" alt="8 year battery warranty">-->
+            <!--            </div>-->
+
+            <!--          </div>-->
+
+            <!--             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">-->
+            <!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+            <!--                <span class="visually-hidden">Previous</span>-->
+            <!--              </button>-->
+            <!--              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">-->
+            <!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+            <!--                <span class="visually-hidden">Next</span>-->
+            <!--              </button>-->
+
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</section>-->
+
+            <section class="service-section m-sd5">
+                <div class="container">
+                    <div class="section-head">
+                        <h3 class="section-title" style="font-weight: 1000;font-family: 'Gentona-Regular'">
+                            Petrol fades.
+                            <br />
+                            <span class="title-highlight-gradient">
+                                EV Electric Leads
+                                <!--the way-->
+                            </span>
+                        </h3>
+                    </div>
+
+                    <div class="type-of-service">
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-star.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Star</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Future Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,00,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-star-pro.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Star Pro</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Future Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,10,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-star-new.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>F-Star</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Future Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>76,500</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-sniper.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Sniper</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Future Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,00,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-sniper-pro.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Sniper Pro</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Future Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,10,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-dual.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Dual</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Future Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,25,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-dual-pro.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Dual Pro</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Feature Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,35,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-smart.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Smart</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Feature Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,35,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-ultra.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Ultra</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Feature Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,35,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-ultra-pro.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Ultra Pro</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Feature Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,35,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-flasher-rto.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Flasher RTO</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Feature Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,55,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-type">
+                            <div class="service-detail">
+                                <div class="text-center">
+                                    <img src='assets/img/scooties/f-flasher-new.png' class="img" />
+                                </div>
+                                <h3 class="service-title px-4 mt-1">
+                                    <strong>F-</strong><span style='font-weight:400'>Flasher RTO</span>
+                                </h3>
+                                <p class="px-4 fs-5">
+                                    Feature Packaged
+                                </p>
+                                <p class="px-4 fs-5 mt-1">
+                                    Now with an 3-year Battery Warranty
+                                </p>
+                                <hr style='margin:0 24px' />
+                                <br />
+                                <br />
+                                <div class='px-4'>
+                                    <p>Now at</p>
+                                    <h4 class='pos-bottom'>₹1,55,000</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- home about section -->
+            <section class="home-about-us" data-aos="fade-up">
+                <div class="container">
+                    <div class="home-about-detail">
+
+                        <div class="about-us-content row">
+                            <div class="col-sm-6">
+                                <div class="section-head">
+                                    <div class="title-divider-right">OUR COMMITMENT TO CHANGE</div>
+                                    <h3 class="section-title">
+                                        Building a
+                                        <span class="title-highlight-gradient">
+                                            better Future
+                                        </span>
+                                    </h3>
+                                    <p>
+                                        <b>EV Electric</b> is a visionary company committed to driving positive change
+                                        and building a better future through its eco-friendly practices. With a strong
+                                        focus on sustainability, EV Electric designs and manufactures
+                                        electric vehicles that not only offer cutting-edge performance but also actively
+                                        reduce the carbon footprint.
+                                    </p>
+                                    <p>
+                                        By harnessing the power of clean energy and innovative technologies, our
+                                        electric vehicles provide a greener alternative to traditional fossil fuel
+                                        vehicles. At EV Electric, we believe that a sustainable future is within reach,
+                                        and we are dedicated to
+                                        paving the way towards a cleaner and healthier planet for generations to come.
+                                    </p>
+                                </div>
+                                <div class="skill-container">
+                                    <div class="skill-wrapper">
+                                        <h6 class="skill-titile">Eco-friendly Charging</h6>
+                                        <div class="progress-wrapper">
+                                            <div class="ab-progress example" data-progress data-value="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-wrapper">
+                                        <h6 class="skill-titile">Cost Effective</h6>
+                                        <div class="progress-wrapper">
+                                            <div class="ab-progress example" data-progress data-value="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-wrapper">
+                                        <h6 class="skill-titile">Satisfaction</h6>
+                                        <div class="progress-wrapper">
+                                            <div class="ab-progress example" data-progress data-value="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="about-right-container">
+                                    <!-- <p class="about-txt">Natus illo curabitur incidi dunt dignissim mollis, atque posuere semper nemo ea? Maxime, repellat, eleifend iste, egestas omnis mollis, atque posuere semper.</p> -->
+                                    <div class="about-goal">
+
+                                        <div class="goal-box">
+                                            <div class="goal-icon">
+                                                <!-- <i aria-hidden="true" class="icon icon-light-bulb-1"></i> -->
+                                                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="goal-content">
+                                                <h6 class="goal-title">
+                                                    <a href="#">Our Vision</a>
+                                                </h6>
+                                                <p class="goal-disc">
+                                                    Our vision at <b>EV Electric</b> is to lead the electric vehicle
+                                                    industry by setting new standards of sustainability and innovation.
+                                                    We envision a future where eco-friendly transportation solutions are
+                                                    accessible to all.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="goal-box">
+                                            <div class="goal-icon">
+                                                <!-- <i aria-hidden="true" class="icon icon-Target"></i> -->
+                                                <i class="fa fa-bullseye" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="goal-content">
+                                                <h6 class="goal-title">
+                                                    <a href="#">Our Mission</a>
+                                                </h6>
+                                                <p class="goal-disc">
+                                                    At <b>EV Electric</b>, we're dedicated to revolutionizing
+                                                    transportation through innovation and sustainability. By designing
+                                                    and manufacturing cutting-edge electric vehicles powered by clean
+                                                    energy sources.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="goal-box">
+                                            <div class="goal-icon">
+                                                <!-- <i aria-hidden="true" class="icon icon-shield"></i> -->
+                                                <i class="fa fa-shield" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="goal-content">
+                                                <h6 class="goal-title">
+                                                    <a href="#">Our Values</a>
+                                                </h6>
+                                                <p class="goal-disc">
+                                                    Our values at <b>EV Electric</b> encompass integrity, innovation,
+                                                    sustainability, and customer satisfaction. They guide us in
+                                                    delivering exceptional products and contributing positively to our
+                                                    planet
+                                                    and communities.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="about-btn">
+                                        <a href="about.html" class="button-round-gradient">MORE ABOUT US</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="about-service-wrap" data-aos="fade-up">
+                <div class="pattern-overlay circle-patten"></div>
+                <div class="container">
+                    <div class="section-head">
+                        <div class="row no-gutters align-items-end">
+                            <div class="col-lg-6">
+                                <div class="title-divider-right">OUR BENEFITS</div>
+                                <h3 class="section-title mb-0">
+                                    Our Agency Has Been Present For Over 18 Years In Electric Vehicle
+                                    <span class="title-highlight-gradient">
+                                        Business
+                                    </span>
+                                </h3>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="section-disc">
+                                    <p>
+                                        Our agency has established a strong presence in the electric vehicle business
+                                        over the past 18 years. With a dedicated focus on advancing eco-friendly
+                                        transportation solutions, we have diligently cultivated expertise and forged
+                                        strategic partnerships
+                                        to drive innovation and sustainability within the industry.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iconbox-container d-flex flex-wrap justify-content-center">
+                        <div class="iconbox-item-3 d-flex flex-wrap">
+                            <div class="iconbox-border d-flex align-items-center">
+                                <div class="iconbox-icon">
+                                    <i aria-hidden="true" class="fa fa-chart-area"></i>
+                                </div>
+                                <div class="iconbox-content">
+                                    <h6 class="inbox-title">Enhanced Performance</h6>
+                                    <p>Boosted EV capabilities for superior performance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iconbox-item-3 d-flex flex-wrap">
+                            <div class="iconbox-border d-flex align-items-center">
+                                <div class="iconbox-icon">
+                                    <i aria-hidden="true" class="fas fa-check"></i>
+                                </div>
+                                <div class="iconbox-content">
+                                    <h6 class="inbox-title">Cost Efficiency</h6>
+                                    <p>Economical solutions for sustainable mobility.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iconbox-item-3 d-flex flex-wrap">
+                            <div class="iconbox-border d-flex align-items-center">
+                                <div class="iconbox-icon">
+                                    <i aria-hidden="true" class="fas fa-leaf"></i>
+                                </div>
+                                <div class="iconbox-content">
+                                    <h6 class="inbox-title">Eco-Friendly Solutions</h6>
+                                    <p>Green alternatives for a cleaner future.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- home service section -->
+            <section class="home-service" id='services' data-aos="fade-up">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="section-head text-center">
+                        <h3 class="section-title-heading-white">Excellent &
+                            <span class="title-highlight-white">Best Metrics</span>
+                        </h3>
+                        <div class="title-divider-center">
+                            PERFORMANCE METRICS
+                        </div>
+                    </div>
+                    <div class="service-catalog">
+                        <div class="left-service-list service-list">
+                            <div class="service-content">
+                                <div class="service-title">
+                                    <h6>01</h6>
+                                    <h5>
+                                        <a href="javascript:void(0)">15</a>
+                                    </h5>
+                                </div>
+                                <p class="service-desc">
+                                    Climbing Ability
+                                </p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-title">
+                                    <h6>02</h6>
+                                    <h5>
+                                        <a href="javascript:void(0)">150 kg</a>
+                                    </h5>
+                                </div>
+                                <p class="service-desc">
+                                    Max. Load
+
+                                </p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-title">
+                                    <h6>03</h6>
+                                    <h5>
+                                        <a href="javascript:void(0)">50-150 km *</a>
+                                    </h5>
+                                </div>
+                                <p class="service-desc">
+                                    Range travelled per full charge
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-image">
+                            <div class="pattern-overlay"></div>
+                            <div id="circle">
+                                <img src="assets/img/1.png" id="scoty" alt="scoty">
+                            </div>
+                            <!-- <img src="assets/img/model-2.png" alt=""> -->
+                        </div>
+                        <div class="right-service-list service-list">
+                            <div class="service-content">
+                                <div class="service-title">
+                                    <h6>04</h6>
+                                    <h5>
+                                        <a href="javascript:void(0)">
+                                            Battery</a>
+                                    </h5>
+                                </div>
+                                <p class="service-desc">
+                                    60V 26Ah Lithium-ion
+                                </p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-title">
+                                    <h6>05</h6>
+                                    <h5>
+                                        <a href="javascript:void(0)">
+                                            3-4 hrs*</a>
+                                    </h5>
+                                </div>
+                                <p class="service-desc">
+                                    Charging time
+                                </p>
+                            </div>
+                            <div class="service-content">
+                                <div class="service-title">
+                                    <h6>06</h6>
+                                    <h5>
+                                        <a href="javascript:void(0)">
+                                            Motor: 250watt
+                                        </a>
+                                    </h5>
+                                </div>
+                                <p class="service-desc">
+                                    BLDC Motor
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- home progress counter  -->
+            <div class="home-progress-section">
+                <div class="container">
+                    <div class="counter-inner">
+                        <div class="counter-item-wrap row">
+                            <div class="col-lg-3 col-sm-6 counter-item ">
+                                <div class="counter-detail">
+                                    <div class="counter-icon">
+                                        <!-- <i aria-hidden="true" class="icon icon-calendar1"></i> -->
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="counter-content">
+                                        <div class="counter-no">
+                                            <span class="counter">18</span>+
+                                        </div>
+                                        <div class="Completed">
+                                            Years Experience
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 counter-item ">
+                                <div class="counter-detail">
+                                    <div class="counter-icon">
+                                        <!-- <i aria-hidden="true" class="icon icon-cogwheel"></i> -->
+                                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="counter-content">
+                                        <div class="counter-no">
+                                            <span class="counter">1000</span>+
+                                        </div>
+                                        <div class="Completed">
+                                            Visitor: dealership
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 counter-item ">
+                                <div class="counter-detail">
+                                    <div class="counter-icon">
+                                        <!-- <i aria-hidden="true" class="icon icon-review"></i> -->
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="counter-content">
+                                        <div class="counter-no">
+                                            <span class="counter">50</span>k+
+                                        </div>
+                                        <div class="Completed">
+                                            Positive Reviews
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 counter-item ">
+                                <div class="counter-detail">
+                                    <div class="counter-icon">
+                                        <!-- <i aria-hidden="true" class="icon icon-users"></i> -->
+                                        <i class="fa fa-users" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="counter-content">
+                                        <div class="counter-no">
+                                            <span class="counter">90</span>k+
+                                        </div>
+                                        <div class="Completed">
+                                            Happy Customers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- home charging process -->
+            <section class="home-charging" id='features' data-aos="fade-up">
+
+                <div class="container">
+                    <div class="section-head text-center">
+                        <h3 class="section-title-heading">FEATURES
+                            <span class="title-highlight-gradient">HIGHLIGHTES</span>
+                        </h3>
+                        <div class="title-divider-center">
+                            <span class='text-uppercase'>Powering Our Electric Vehicles with Advanced Features</span>
+                        </div>
+                    </div>
+                    <div class="charging-procudure">
+                        <div class="pattern-overlay upper-arrow"></div>
+                        <div class="pattern-overlay upper-arrow right-side"></div>
+                        <div class="pattern-overlay bottom-arrow"></div>
+                        <div class="pattern-overlay bottom-arrow left-side"></div>
+                        <div class="charge-step">
+                            <figure class="charging-step-img">
+                                <img src="assets/img/brakes.png" alt="">
+                            </figure>
+                            <div class="step-content">
+                                <h5 class="step-content-title">Dual Disc Brake</h5>
+                                <p>Enhanced braking system for superior control and safety on the road</p>
+                            </div>
+                        </div>
+                        <div class="charge-step">
+                            <figure class="charging-step-img">
+                                <img src="assets/img/power.png" alt="">
+                            </figure>
+                            <div class="step-content">
+                                <h5 class="step-content-title">Charger Type</h5>
+                                <p>10 Amp Smart Charger with over-voltage, temperature, and short-circuit protection.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="charge-step">
+                            <figure class="charging-step-img">
+                                <img src="assets/img/suspension.png" alt="">
+                            </figure>
+                            <div class="step-content">
+                                <h5 class="step-content-title">Suspension</h5>
+                                <p>Hydraulic suspension for smooth rides on any terrain</p>
+                            </div>
+                        </div>
+                        <div class="charge-step">
+                            <figure class="charging-step-img">
+                                <img src="assets/img/battery.png" alt="">
+                            </figure>
+                            <div class="step-content">
+                                <h5 class="step-content-title">Lithium Ion Battery</h5>
+                                <p>High-performance lithium-ion battery for long-lasting power</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-charging" id='specification' style='padding: 20px 0 20px !important;'>
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="section-head text-center">
+                        <h3 class="section-title-heading">TECHNICAL
+                            <span class="title-highlight-gradient">SPECIFICATION</span>
+                        </h3>
+                        <div class="title-divider-center">
+                            <span class='text-uppercase'>Delve into the detailed technical specifications of our
+                                products</span>
+                        </div>
+                    </div>
+                    <div class="tab-container">
+                        <div class="responsive-tabs">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a id="tab-A" href="#pane-A" class="nav-link active" data-bs-toggle="tab"
+                                        role="tab">
+                                        DRIVE MOTOR AND BATTERY
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="tab-B" href="#pane-B" class="nav-link" data-bs-toggle="tab" role="tab">
+                                        PERFORMANCE
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="tab-C" href="#pane-C" class="nav-link" data-bs-toggle="tab" role="tab">
+                                        SUSPENSION
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="tab-C" href="#pane-D" class="nav-link" data-bs-toggle="tab" role="tab">
+                                        BRAKING SYSTEM
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="tab-C" href="#pane-E" class="nav-link" data-bs-toggle="tab" role="tab">
+                                        DIMENSIONS AND WEIGHTS
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="tab-C" href="#pane-F" class="nav-link" data-bs-toggle="tab" role="tab">
+                                        ECONOMICS OF USAGE
+                                    </a>
+                                </li>
+                            </ul>
+                            <div id="nav-tab-content" class="tab-content" role="tablist">
+                                <div id="pane-A" class="card tab-pane fade show active" role="tabpanel"
+                                    aria-labelledby="tab-A">
+                                    <div class="card-header" role="tab" id="heading-A">
+                                        <h5 class="mb-0">
+                                            <a data-bs-toggle="collapse" href="#collapse-A" aria-expanded="true"
+                                                aria-controls="collapse-A">
+                                                DRIVE MOTOR AND BATTERY
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse-A" class="collapse show" data-bs-parent="#nav-tab-content"
+                                        role="tabpanel" aria-labelledby="heading-A">
+                                        <div class="card-body">
+                                            <table>
+                                                <tr>
+                                                    <th>Battery Type</th>
+                                                    <td>Lithium-ion (Detachable Battery)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Battery Voltage</th>
+                                                    <td>60/72 V</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Battery Ah Rating</th>
+                                                    <td>26 to 44 AH</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Motor Type</th>
+                                                    <td>BLDC Motor</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Charger Type</th>
+                                                    <td>6/7/10 Amp Smart Charger with Over-voltage, Temperature and
+                                                        Short-circuit protection</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pane-B" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
+                                    <div class="card-header" role="tab" id="heading-B">
+                                        <h5 class="mb-0">
+                                            <a class="collapsed" data-bs-toggle="collapse" href="#collapse-B"
+                                                aria-expanded="false" aria-controls="collapse-B">
+                                                PERFORMANCE
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse-B" class="collapse" data-bs-parent="#nav-tab-content"
+                                        role="tabpanel" aria-labelledby="heading-B">
+                                        <div class="card-body">
+                                            <table>
+                                                <tr>
+                                                    <th>Speed</th>
+                                                    <td>50-150 km/hr</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Max. Load</th>
+                                                    <td>150 kg</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Climbing Ability</th>
+                                                    <td>15</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Charging time (from flat to full charge)</th>
+                                                    <td>4-5 hours</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Range travelled per full charge</th>
+                                                    <td>50-150 km *</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pane-C" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-C">
+                                    <div class="card-header" role="tab" id="heading-C">
+                                        <h5 class="mb-0">
+                                            <a data-bs-toggle="collapse" href="#collapse-C" aria-expanded="true"
+                                                aria-controls="collapse-C">
+                                                SUSPENSION
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse-C" class="collapse" data-bs-parent="#nav-tab-content"
+                                        role="tabpanel" aria-labelledby="heading-C">
+                                        <div class="card-body">
+                                            <table>
+                                                <tr>
+                                                    <th>Suspension Type</th>
+                                                    <td>Hydraulic</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Front Side suspension</th>
+                                                    <td>Hydraulic Telescopic</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Rear Side suspension</th>
+                                                    <td>Colled Spring</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div id="pane-D" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-D">
+                                    <div class="card-header" role="tab" id="heading-D">
+                                        <h5 class="mb-0">
+                                            <a data-bs-toggle="collapse" href="#collapse-D" aria-expanded="true"
+                                                aria-controls="collapse-D">
+                                                BRAKING SYSTEM
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse-D" class="collapse" data-bs-parent="#nav-tab-content"
+                                        role="tabpanel" aria-labelledby="heading-D">
+                                        <div class="card-body">
+                                            <table>
+                                                <tr>
+                                                    <th>Front side</th>
+                                                    <td>220mm</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Rear side</th>
+                                                    <td>180mm</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div id="pane-E" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-E">
+                                    <div class="card-header" role="tab" id="heading-E">
+                                        <h5 class="mb-0">
+                                            <a data-bs-toggle="collapse" href="#collapse-E" aria-expanded="true"
+                                                aria-controls="collapse-E">
+                                                DIMENSIONS AND WEIGHTS
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse-E" class="collapse" data-bs-parent="#nav-tab-content"
+                                        role="tabpanel" aria-labelledby="heading-E">
+                                        <div class="card-body">
+                                            <table>
+                                                <tr>
+                                                    <th>Tyre</th>
+                                                    <td>10/12 Inch</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Dimensions</th>
+                                                    <td>1850 X 700 X 1150mm</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Seat Length</th>
+                                                    <td>780MM</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Ground Clearance</th>
+                                                    <td>190mm</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div id="pane-F" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-F">
+                                    <div class="card-header" role="tab" id="heading-F">
+                                        <h5 class="mb-0">
+                                            <a data-bs-toggle="collapse" href="#collapse-F" aria-expanded="true"
+                                                aria-controls="collapse-F">
+                                                ECONOMICS OF USAGE
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse-F" class="collapse" data-bs-parent="#nav-tab-content"
+                                        role="tabpanel" aria-labelledby="heading-F">
+                                        <div class="card-body">
+                                            <table>
+                                                <tr>
+                                                    <th>Power (electricity units) consumed in charging the battery fully
+                                                    </th>
+                                                    <td>1.5 Units</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Running cost / km</th>
+                                                    <td>10 paise / km *</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Range covered / Rs. 12 of units consumed in charging</th>
+                                                    <td>50 kms upto 150 kms *</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>Range Covered Per 1.2rs</th>
+                                                    <td>25 paise *</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- home download option  -->
+            <section class="download-section" data-aos="fade-up">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="download-wrapper">
+                        <div class="download-content">
+                            <div class="section-head">
+                                <div class="title-divider-right text-white">
+                                    GREEN AND CLEAN</div>
+                                <h3 class="section-title-heading-white">
+                                    Driving Sustainability: Our Environmental
+                                    <span class="title-highlight-white">
+                                        Commitment
+                                    </span>
+                                </h3>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <b>Eco-Friendly Vehicles</b>: Our vehicles are crafted with eco-friendly
+                                            materials and powered by sustainable technologies, minimizing environmental
+                                            impact while providing efficient transportation solutions.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <b>Economical Solutions</b>: We offer cost-effective transportation
+                                            solutions that are budget-friendly for both consumers and businesses,
+                                            ensuring affordability without compromising quality or performance.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <b>Zero Emission</b>: Our vehicles produce zero emissions, helping to reduce
+                                            air pollution and combat climate change. With a commitment to
+                                            sustainability, we're driving towards a cleaner, greener future for
+                                            all.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="download-image">
+                            <div class="pattern-overlay"></div>
+                            <figure class="mobile-img ">
+                                <img src="assets/img/model-4-light.png" style='position: relative;top: 50px' alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- gallery -->
+            <section class="home-blog-section" id='innovation' data-aos="fade-up">
+                <div class="container">
+                    <div class="section-head text-center">
+                        <h3 class="section-title-heading">INNOVATION
+                            <span class="title-highlight-gradient"> IN EVS</span>
+                        </h3>
+                        <div class="title-divider-center">
+                            EV Electric
+                        </div>
+                    </div>
+                    <div class="gallery-section">
+                        <div class="container">
+                            <div class="gallery-container">
+                                <div class="single-gallery" data-aos="zoom-in-up">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-1.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-1.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="single-gallery" data-aos="zoom-in">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-2.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-2.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="single-gallery" data-aos="zoom-in-down">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-3.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-3.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="single-gallery" data-aos="zoom-in-up">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-4.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-4.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="single-gallery" data-aos="zoom-in">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-5.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-5.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="single-gallery" data-aos="zoom-in-down">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-6.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-6.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+
+
+                                <div class="single-gallery" data-aos="zoom-in-up">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-7.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-7.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+
+                                <div class="single-gallery" data-aos="zoom-in">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-8.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-8.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+
+                                <div class="single-gallery" data-aos="zoom-in-down">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-9.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-9.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+
+
+                                <div class="single-gallery" data-aos="zoom-in-up">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-10.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-10.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+
+                                <!--<div class="single-gallery">-->
+                                <!--    <figure class="gallery-img">-->
+                                <!--        <a href="assets/img/gallery/square-11.jpeg" data-fancybox="gallery">-->
+                                <!--            <img src="assets/img/gallery/square-11.jpeg" alt="">-->
+                                <!--        </a>-->
+                                <!--    </figure>-->
+                                <!--</div>-->
+
+                                <div class="single-gallery" data-aos="zoom-in">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-12.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-12.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+
+                                <div class="single-gallery" data-aos="zoom-in-down">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-13.png" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-13.png" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+
+
+                                <!-- <div class="single-gallery">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-14.jpeg" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-14.jpeg" alt="">
+                                        </a>
+                                    </figure>
+                                </div> -->
+
+
+                                <!--<div class="single-gallery">-->
+                                <!--    <figure class="gallery-img">-->
+                                <!--        <a href="assets/img/gallery/square-15.jpeg" data-fancybox="gallery">-->
+                                <!--            <img src="assets/img/gallery/square-15.jpeg" alt="">-->
+                                <!--        </a>-->
+                                <!--    </figure>-->
+                                <!--</div>-->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- <section class="home-blog-section" id='gallery' data-aos="fade-up">
+                <div class="container">
+                    <div class="section-head text-center">
+                        <h3 class="section-title-heading">OUR
+                            <span class="title-highlight-gradient"> WORKHOUSE</span>
+                        </h3>
+                        <div class="title-divider-center">
+                            Office Photo Gallery
+                        </div>
+                    </div>
+                    <div class="gallery-section">
+                        <div class="container">
+                            <div class="gallery-container" style='grid-template-columns: repeat(2, 1fr)'>
+                                <div class="single-gallery">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-17.jpeg" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-17.jpeg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="single-gallery">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-18.jpeg" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-18.jpeg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="single-gallery">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-21.jpeg" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-21.jpeg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="single-gallery">
+                                    <figure class="gallery-img">
+                                        <a href="assets/img/gallery/square-22.jpeg" data-fancybox="gallery">
+                                            <img src="assets/img/gallery/square-22.jpeg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+            <!-- contact page html start -->
+            <section class="contact-page-section" id='contact' data-aos="fade-up">
+                <div class="container">
+                    <div class="section-head text-center">
+                        <h3 class="section-title-heading">CONTACT
+                            <span class="title-highlight-gradient"> US</span>
+                        </h3>
+                        <div class="title-divider-center">
+                            EV Electric
+                        </div>
+                    </div>
+                    <div class="contact-deatil-list">
+                        <div class="connection-detail-wrapper">
+                            <figure class="contact-icon">
+                                <i aria-hidden="true" class="fas fa-phone-volume"></i>
+                            </figure>
+                            <div class="contact-info-list">
+                                <h5 class="contact-list-title">Phone Number :</h5>
+                                <ul>
+
+                                    <li>
+                                        <a href="tel:9906246006">Mobile : +91-9906246006</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="connection-detail-wrapper">
+                            <figure class="contact-icon">
+                                <i aria-hidden="true" class="fas fa-envelope-open-text"></i>
+                            </figure>
+                            <div class="contact-info-list">
+                                <h5 class="contact-list-title">Email Address :</h5>
+                                <ul>
+                                    <li>
+                                        <a href="SKulvinder625@gmail.com"><span class="__cf_email__"
+                                                data-cfemail="4d2e22203d2c23340d2922202c2423632e2220">SKulvinder625@gmail.com</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="connection-detail-wrapper item-3">
+                            <figure class="contact-icon">
+                                <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                            </figure>
+                            <div class="contact-info-list">
+                                <h5 class="contact-list-title">Address Location :</h5>
+                                <ul>
+                                    <li>
+                                        Vijaypur, Samba - Jammu and Kashmir (UT)
+
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-inner">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="contact-detail-container">
+                                    <div class="section-head">
+                                        <div class="title-divider-right">CONVENIENT & FAST</div>
+                                        <h3 class="section-title">
+                                            Feel Free To Contact &
+                                            <span class="title-highlight-gradient">
+                                                Reach Us !!
+                                            </span>
+                                        </h3>
+                                        <div class="section-disc">
+                                            <p>
+                                                Feel free to reach out and contact us at any time! Our dedicated team is
+                                                here to assist you with any inquiries or assistance you may need.
+                                                Whether you have questions about our products, need support with your
+                                                purchase, or want to explore partnership opportunities,
+                                                we're always available to help
+                                            </p>
+                                        </div>
+                                        <div class="widget widget_social">
+                                            <div class="socialgroup">
+                                                <ul>
+                                                    <li>
+                                                        <a
+                                                            href="https://www.facebook.com/profile.php?id=61554808901859">
+                                                            <i class="fab fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://twitter.com/Frelectricltd">
+                                                            <i class="fab fa-twitter"></i>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.instagram.com/frelectric01/">
+                                                            <i class="fab fa-instagram"></i>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="https://www.linkedin.com/in/fr-electric-41171b2aa/">
+                                                            <i class="fab fa-linkedin"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="map-section">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5249.98325970342!2d2.294481!3d48.85837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1718364277167!5m2!1sen!2sus" height="270" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="contact-from-wrap">
+                                    <form class="contact-from" method='POST'>
+                                        <p>
+                                            <input type="text" name="name" placeholder="Your Name..">
+                                        </p>
+                                        <p>
+                                            <input type="email" name="email" placeholder="Your Email..">
+                                        </p>
+                                        <p>
+                                            <input type="number" name="name" placeholder="Phone Number..">
+                                        </p>
+                                        <p class="width-full">
+                                            <textarea rows="8" placeholder="Enter Message.."></textarea>
+                                        </p>
+                                        <p class="width-full">
+                                            <input type="button" name="submit" value="SUBMIT MESSAGE">
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- home coupon section -->
+            <section class=" home-coupon gradient-bg">
+                <div class="container">
+                    <div class="coupon-wrapper">
+                        <div class="coupon-content" style="padding: 25px 0">
+                            <div class="section-head">
+                                <div class="title-divider-right-white text-uppercase">
+                                    Start Your Sustainable Journey Today</div>
+                                <h3 class="section-title-heading-white">
+                                    Take the Next
+                                    <span class="title-highlight-white">
+                                        Step
+                                    </span>
+                                </h3>
+                                <p>
+                                    It's time to take action towards a greener future. Reach out to us and discover how
+                                    our eco-friendly solutions can revolutionize your journey. Join us in shaping a
+                                    sustainable tomorrow
+                                </p>
+                            </div>
+                            <div class="coupon-btn">
+                                <a href="#contact" class="button-round-white">CONTACT US</a>
+                            </div>
+                        </div>
+                        <div class="coupon-offer">
+                            <div class="pattern-overlay"></div>
+                            <div class="coupon-detail">
+                                <h6 class="discount-name">
+                                    <!-- COUPONS FROM -->
+                                </h6>
+                                <span class="discount-offer">
+                                    <!-- 22% -->
+                                </span>
+                                <h5>
+                                    <!-- OFF -->
+                                </h5>
+                                <h3 class="discount-title">
+                                    <!-- REPAIRS ! -->
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer part -->
+        <footer id="colophon" class="site-footer">
+            <div class="top-footer">
+                <div class="footer-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4 col-12">
+                            <aside class="widget widget_text img-textwidget">
+                                <div class="footer-logo">
+                                    <a href="index">
+                                        <img src="logo_ktc_footer.png" style='height: 60px' alt="footer-logo">
+                                    </a>
+                                </div>
+                                <div class="textwidget widget-text">
+                                    EV Electric has made significant strides in revolutionizing the electric vehicle
+                                    (EV) sector through its groundbreaking innovations. With a strong focus on research
+                                    and development, EV Electric has pioneered cutting-edge technologies that have
+                                    redefined
+                                    the electric mobility landscape.
+                                </div>
+                                <!-- <ul class="footer-contact-info">
+                                    <li>
+                                        <a href="tel:+918968022315">
+                                            <i aria-hidden="true" class="icon icon-phone1"></i>
+                                            +91-8968022315
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="support@frelectric.in">
+                                            <i aria-hidden="true" class="icon icon-envelope3"></i>
+                                            <span class="__cf_email__" data-cfemail="">support@frelectric.in</span>
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </aside>
+                            <!-- <div class="footer-social-links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=61554808901859" target="_blank">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/Frelectricltd" target="_blank">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/frelectric01/" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/fr-electric-41171b2aa/" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <aside class="widget">
+                                <h5 class="title-divider-right">Quick Links</h5>
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                        <a href="index">Home</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                        <a href="#about">About Us</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                        <a href="#features">Features</a>
+                                    </li>
+
+                                    <!-- <li>
+                                        <a href="franchise/login">Franchise</a>
+                                    </li> -->
+                                    <li>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                        <a href="#innovation">Innovation</a>
+                                    </li>
+
+                                    <li>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                        <a href="#contact">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <aside class="widget">
+                                <h5 class="title-divider-right">Support</h5>
+                                <ul class="footer-contact-info">
+                                    <li>
+                                        <a href="tel:+919906246006">
+                                            <!-- <i aria-hidden="true" class="icon icon-phone1"></i> -->
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            +91-9906246006
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:SKulvinder625@gmail.com">
+                                            <!-- <i aria-hidden="true" class="icon icon-envelope3"></i> -->
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                            <span class="__cf_email__" data-cfemail="">SKulvinder625@gmail.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <!--<div class="col-lg-4 col-md-6">-->
+                        <!--    <aside class="widget">-->
+                        <!--        <h5 class="title-divider-right">Our Policies</h5>-->
+                        <!--        <ul>-->
+                        <!--            <li>-->
+                        <!--                <a href="#">Privacy Policy</a>-->
+                        <!--            </li>-->
+                        <!--            <li>-->
+                        <!--                <a href="#">Terms & Conditions</a>-->
+                        <!--            </li>-->
+                        <!--            <li>-->
+                        <!--                <a href="#">Refund Policy</a>-->
+                        <!--            </li>-->
+
+                        <!--        </ul>-->
+                        <!--    </aside>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="row mt-5 text-light pt-5">
+                        <div class="col-12 text-center">
+                            © 2024 KTC Green Drive. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- back to top -->
+        <a id="backTotop" href="#" class="to-top-icon">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <!-- custom search field html -->
+
+    </div>
+    <!-- JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/vendors/jquery/jquery.js"></script>
+    <script src="assets/vendors/waypoint/jquery.waypoints.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/vendors/progressbar-fill-visible/js/progressBar.min.js"></script>
+    <script src="assets/vendors/countdown-date-loop-counter/loopcounter.js"></script>
+    <script src="assets/vendors/counterup/jquery.counterup.js"></script>
+    <script src="assets/vendors/modal-video/jquery-modal-video.min.js"></script>
+    <script src="assets/vendors/masonry/masonry.pkgd.min.js"></script>
+    <script src="assets/vendors/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/vendors/slick/slick.min.js"></script>
+    <script src="assets/vendors/slick-nav/jquery.slicknav.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        var modalElem = document.getElementById("staticBackdrop")
+        var openModalElem = setTimeout(openModal,3000);
+        function openModal(){
+            console.log('modalElem',modalElem)
+            modalElem.style.display = 'block';
+            modalElem.style.opacity = 1;   
+        }
+        function closeModal(){
+            modalElem.style.display = 'none';
+        }
+        
+        
+            var preloader = document.getElementById('loader')
+            function myFunction() {
+                preloader.style.display = 'none';
+                console.log('preloader', preloader)
+            }
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/662baaf91ec1082f04e77182/1hsd97omp';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+</body>
+</html>
